@@ -16,7 +16,7 @@ function SudokuCell(props: SudokuCellProps) {
     if (row === 2 || row === 5) {
         className += ' thickBottom';
     }
-    return (<td className={className} onClick={updateValue}>{value ?? ' '}</td>);
+    return (<td className={className} onClick={() => updateValue()}>{value}</td>);
 }
 
 export default SudokuCell;

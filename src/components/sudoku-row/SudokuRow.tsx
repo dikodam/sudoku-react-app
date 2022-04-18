@@ -2,7 +2,7 @@ import SudokuCell from "../sudoku-cell/SudokuCell";
 import {CellValue} from "../game/Game";
 
 interface SudokuRowProps {
-    row: Array<CellValue>;
+    row: CellValue[];
     rowIndex: number;
     updateCol: (col: number) => () => void;
 }
